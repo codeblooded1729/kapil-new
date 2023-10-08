@@ -4,7 +4,7 @@ import { TextField, Card, CardContent, Typography, Collapse, IconButton } from '
 import PersonIcon from '@material-ui/icons/Person';
 
 
-const BACKEND_DOMAIN = 'http://localhost:3000';
+const BACKEND_DOMAIN = 'http://54.169.5.180:3000';
 
 const KYC: React.FC = () => {
     const classes = useStyles();

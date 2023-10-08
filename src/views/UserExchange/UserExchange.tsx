@@ -6,7 +6,7 @@ import { Modal, TextField, Select, Divider, MenuItem, InputLabel, FormControl, L
 
 import CloseIcon from '@material-ui/icons/Close';
 
-const BACKEND_DOMAIN = 'http://localhost:3000'; 
+const BACKEND_DOMAIN = 'http://54.169.5.180:3000'; 
 const socket = io(BACKEND_DOMAIN);
 
 const UserExchange: React.FC = () => {
@@ -47,7 +47,7 @@ const UserExchange: React.FC = () => {
                 body: JSON.stringify({ name: userName }),
             });
 
-            if (response.status === 200) {
+            if (response.status === 201) {
                 setSnackbarMessage('User added successfully!');
                 setSnackbarColor('success');
             } else {

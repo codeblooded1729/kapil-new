@@ -4,7 +4,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import { useStyles } from './RegFIUStyles';
 
-const BACKEND_DOMAIN = 'http://localhost:3000';
+const BACKEND_DOMAIN = 'http://54.169.5.180:3000';
 
 const RegFIU: React.FC = () => {
     const classes = useStyles();

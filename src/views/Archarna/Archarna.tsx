@@ -5,7 +5,7 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import { useStyles } from './ArcharnaStyles'; // Assuming you have a styles file for Archarana
 import { TextField } from '@material-ui/core';
 
-const BACKEND_DOMAIN = 'http://localhost:3000';
+const BACKEND_DOMAIN = 'http://54.169.5.180:3000';
 
 const Archarana: React.FC = () => {
     const classes = useStyles();
