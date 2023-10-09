@@ -97,8 +97,8 @@ const UserExchange: React.FC = () => {
 
     // Listener for 'information sent' event
     socket.on('information sent', (msg) => {
-        const { COMM, PRF, EID_S, EID_R, value } = msg;
-        const message = `Information sent details: ${COMM}, ${PRF}, ${EID_S}, ${EID_R}, ${value}`;
+        // const { COMM, PRF, EID_S, EID_R, value } = msg;
+        const message = `Information sent details: ${JSON.stringify(msg)} `;
         setTransactionMessages((prevMessages) => [...prevMessages, message]);
     });
 
@@ -111,7 +111,7 @@ const UserExchange: React.FC = () => {
     // Listener for 'confirmation received' event
     socket.on('confirmation received', (msg) => {
         const { SIGM_C } = msg;
-        const message = `Confirmation received details: ${SIGM_C}`;
+        const message = `Confirmation received details: ${JSON.stringify(SIGM_C)}`;
         setTransactionMessages((prevMessages) => [...prevMessages, message]);
     });
 
@@ -313,7 +313,7 @@ const UserExchange: React.FC = () => {
 
                     <div>
                         {transactionMessages.map((message, index) => (
-                            <p key={index}>{message}</p>
+                            <div key={index}>{message}</div>
                         ))}
                     </div>
                 </div>
