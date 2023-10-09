@@ -3,4 +3,4 @@
 - Generate transaction io emit data check
 - view transactions not working right now
 - Add field details in Archarna and Reg transaction commitment: Done
-- Reg get name not working
+- Reg get name not working: doing
