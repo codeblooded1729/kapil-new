@@ -100,7 +100,7 @@ const RegFIU: React.FC = () => {
                             <TableRow>
                                 <TableCell className={classes.collapsibleCell} colSpan={4}>
                                     <Collapse in={openRow === transaction.Transaction}>
-                                        <pre>{JSON.stringify(transaction.Attestation, null, 2)}</pre>
+                                        <pre>{JSON.stringify(transaction, null, 2)}</pre>
                                     </Collapse>
                                 </TableCell>
                             </TableRow>

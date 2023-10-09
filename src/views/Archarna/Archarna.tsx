@@ -43,7 +43,7 @@ const Archarana: React.FC = () => {
             <Table className={classes.table}>
                 <TableHead>
                     <TableRow>
-                        <TableCell>Transaction Commitment</TableCell>
+                        <TableCell>Transaction</TableCell>
                         <TableCell>Value</TableCell>
                         <TableCell>Details</TableCell>
                     </TableRow>
@@ -65,7 +65,7 @@ const Archarana: React.FC = () => {
                                     <Collapse in={openRow === transaction.Transaction_Commitment}>
                                         {/* Display nested proof data here */}
                                         {/* This can be further improved and broken down as needed */}
-                                        <pre>{JSON.stringify(transaction.proof, null, 2)}</pre>
+                                        <pre>{JSON.stringify(transaction, null, 2)}</pre>
                                     </Collapse>
                                 </TableCell>
                             </TableRow>
