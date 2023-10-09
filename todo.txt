@@ -1,0 +1,6 @@
+- Increase DUI box size in KYC
+- Add non Kyc user
+- Generate transaction io emit data check
+- view transactions not working right now
+- Add field details in Archarna transaction commitment
+- Reg get name not working
